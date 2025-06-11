@@ -2,160 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>David Portillo – Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David Portillo - Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
-      background-color: #f9f9f9;
+      background: #f9f9f9;
       color: #333;
+    }
+    header, footer {
       text-align: center;
+      margin-bottom: 40px;
     }
-    .container {
-      max-width: 700px;
-      margin: auto;
-    }
-    img.profile-photo {
-      width: 180px;
+    img.profile {
+      width: 150px;
       border-radius: 50%;
-      margin-top: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-top: 20px;
-    }
-    section.about, section.portfolio, section.resume {
-      margin-top: 40px;
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      text-align: left;
-    }
-    section.about p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    section.portfolio h2, section.resume h2 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 20px;
     }
     .project {
-      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
     }
     .project img {
       width: 100%;
-      max-width: 600px;
+      max-width: 500px;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      display: block;
-      margin-bottom: 10px;
     }
-    .project h3 {
-      margin: 0 0 10px 0;
-    }
-    .download-button {
-      display: inline-block;
-      font-size: 1.2em;
-      color: #007acc;
+    a {
+      color: #0073e6;
       text-decoration: none;
-      border: 2px solid #007acc;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .download-button:hover {
-      background-color: #007acc;
-      color: white;
-    }
-    footer {
-      margin-top: 60px;
-      padding: 20px 0;
-      border-top: 1px solid #ccc;
-      font-size: 1.1em;
-      color: #666;
-      text-align: center;
-    }
-    footer a {
-      margin: 0 12px;
-      color: #007acc;
-      font-weight: bold;
-    }
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Profile Photo -->
-    <img src="profile.jpg" alt="Photo of David Portillo" class="profile-photo" />
-    <h1>David Portillo</h1>
 
-    <!-- About Section -->
-    <section class="about">
-      <p>
-        I’m David Portillo, a dedicated machine learning engineer and full-stack developer passionate about building impactful AI solutions and scalable web applications.
-        With expertise in Python, PyTorch, and cloud infrastructure, I specialize in optimizing models and creating efficient data-driven tools.  
-        I love collaborating on open-source projects like <a href="https://github.com/davidportillo/mnist-bayesian-opt" target="_blank" rel="noopener noreferrer">MNIST Bayesian Optimization</a> 
-        and developing interactive data visualization tools.  
-        When I’m not coding, I enjoy mentoring new developers and exploring emerging AI trends.
-      </p>
-      <p>
-        Connect with me on 
-        <a href="https://github.com/davidportillo26" target="_blank" rel="noopener noreferrer">GitHub</a>, 
-        <a href="https://www.linkedin.com/in/davidportillo26" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or send me an email at 
-        <a href="mailto:anicetod03@gmail.com">anicetod03@gmail.com</a>.
-      </p>
-    </section>
+<header>
+  <h1>David Portillo</h1>
+  <img class="profile" src="profile.jpg" alt="David Portillo Profile Picture" />
+  <p>
+    I’m a software developer with a strong focus on data science and full-stack web development. I’ve built a wide range of projects using Python, JavaScript, React, and Flask. 
+    I’m passionate about using machine learning to solve real-world problems and am actively seeking opportunities to grow in data-focused roles. Check out my work on 
+    <a href="https://github.com/davidportillo26" target="_blank">GitHub</a> and connect with me on 
+    <a href="https://www.linkedin.com/in/david-portillo/" target="_blank">LinkedIn</a>.
+  </p>
+</header>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio">
-      <h2>Portfolio</h2>
+<section>
+  <h2>📁 Portfolio Projects</h2>
 
-      <!-- Project 1 -->
-      <div class="project">
-        <img src="project1-screenshot.png" alt="MNIST Bayesian Optimization Screenshot" />
-        <h3>MNIST Bayesian Optimization</h3>
-        <p>
-          Optimized a neural network on the MNIST dataset using Bayesian optimization (GPyOpt) to tune hyperparameters like learning rate, dropout, and batch size.
-          Implemented early stopping and checkpoint saving for best model versions.
-        </p>
-        <p>
-          <a href="https://github.com/davidportillo/mnist-bayesian-opt#readme" target="_blank" rel="noopener noreferrer">GitHub README</a>
-        </p>
-      </div>
+  <div class="project">
+    <h3>MNIST Bayesian Optimization</h3>
+    <img src="project1-screenshot.png" alt="MNIST Project Screenshot" />
+    <p>Optimized a neural network for digit recognition using Bayesian optimization with GPyOpt. Applied early stopping, checkpoint saving, and convergence plotting.</p>
+    <a href="https://github.com/davidportillo26/mnist-bayesian-opt#readme" target="_blank">View GitHub README</a>
+  </div>
 
-      <!-- Project 2 -->
-      <div class="project">
-        <img src="project2-screenshot.png" alt="Data Visualizer App Screenshot" />
-        <h3>Data Visualizer App</h3>
-        <p>
-          An interactive web application to visualize and explore datasets using Plotly and Flask.
-          Features dynamic filtering and customizable plots to help users gain insights easily.
-        </p>
-        <p>
-          <a href="https://github.com/davidportillo/data-visualizer#readme" target="_blank" rel="noopener noreferrer">GitHub README</a>
-        </p>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project">
-        <img src="project3-screenshot.png" alt="Full Stack Auth App Screenshot" />
-        <h3>Full Stack Auth App</h3>
-        <p>
-          Built a full-stack web application with secure login, user profiles, and JWT authentication.
-          Developed with React, Node.js, and MongoDB, focusing on security best practices.
-        </p>
-        <p>
-          <a href="https://github.com/davidportillo/fullstack-auth-app#readme" target="_blank" rel="noopene_
+  <div class="project">
+    <h3>Data Visualizer App</h3>
+    <img src="project2-screenshot.png" alt="Data Visualizer Screenshot" />
+    <p>Created a data visualization dashboard using D3.js and Flask backend. Supports CSV upload and real-time interactive graphs.</p>
+    <a href="https://
